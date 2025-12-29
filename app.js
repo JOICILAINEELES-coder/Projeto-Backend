@@ -9,7 +9,7 @@ app.use(express.json())
 app.use(cors({origin: '*'}))
 
 
-app.use('/uploads', express.static(path.join(__dirname, 'uploads')))
+app.use('/uploads/assets', express.static(path.join(__dirname, 'assets')))
 app.use('/livros', rotaLivro)
 app.use('/favoritos', rotaFavorito)
 
